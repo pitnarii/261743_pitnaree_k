@@ -1,0 +1,13 @@
+@import "tailwindcss";
+h2 {
+  font-size: 2rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+
+img {
+  max-width: 240px;
+  height: auto;
+  display: block;
+}
