@@ -2,6 +2,7 @@ import { Products } from "../data/Product";
 import ProductCard from "../components/ProductCard";
 import { useCart } from "../context/cartContext";
 import CartItem from "../components/CartItem";
+import CartSummary from "../components/CartSummary";
 
 export default function Home() {
   const { state } = useCart();
@@ -18,6 +19,7 @@ export default function Home() {
         {state.cartItems.map((item) => (
           <CartItem key={item.id} item={item} />
         ))}
+        <CartSummary />
       </div>
     </div>
   );
